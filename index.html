@@ -4,14 +4,21 @@
 
 <h3>Employee Form</h3>
 
-ID: <input type="text"><br><br>
-Name: <input type="text"><br><br>
-Address: <textarea></textarea><br><br>
+ID: <input type="text" id="empId"><br><br>
+Name: <input type="text" id="empName"><br><br>
+Address: <textarea id="empAddress"></textarea><br><br>
 
-<button>Insert</button>
-<button>Select</button>
-<button>Update</button>
-<button>Delete</button>
+<button onclick="insert()">Insert</button>
+<button onclick="selectEmp()">Select</button>
+<button onclick="update()">Update</button>
+<button onclick="deleteEmp()">Delete</button>
+
+<script>
+function insert(){ alert("Insert clicked"); }
+function selectEmp(){ alert("Select clicked"); }
+function update(){ alert("Update clicked"); }
+function deleteEmp(){ alert("Delete clicked"); }
+</script>
 
 </body>
 </html>
